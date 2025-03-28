@@ -1,5 +1,6 @@
-##Mensaje para el profesor
+## Mensaje para el profesor
 Saludos, ingeniero. 
+
 Primeramente, una disculpa. No tomé encuenta que mis proyectos deben ejecutarse en un servidor
 https, por lo que simplemente abriendo el navegador, no iban a funcionar.
 En mi caso, suelo usar la extensión de VsCode _Live Server_
