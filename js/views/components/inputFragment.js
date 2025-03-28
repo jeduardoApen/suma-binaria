@@ -15,7 +15,7 @@ const inputNode = async (params) => {
                  <textarea id="inputNode-text"  name="textarea" rows="5" cols="15" placeholder="Ingresa la suma aquí"></textarea>
              </div>
              <div class="input-button-container">
-                <div class="input-button w-56 h-16 my-6 flex justify-center items-start bg-blue-600 rounded-md" id="input-button" >
+                <div class="input-button w-56 h-16 my-6 flex justify-center items-start bg-blue-600 rounded-md cursor-pointer" id="input-button" >
                     <p class="text-white font-bold text-3xl mt-2 " > Resultado </p>
                 </div>
              </div>

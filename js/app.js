@@ -1,8 +1,14 @@
+/**
+ * Se importan modulos
+ */
+
 import checkText from "./utils/index.js"
 import mainView from "./views/main.js"
 
 
-
+/**
+ * Nodo principal
+ */
 console.log("Hello World!")
 let mainNode = document.querySelector("#app")
 
@@ -10,7 +16,9 @@ mainNode.innerHTML = await mainView()
 
 
 
-
+/**
+ * Sub - nodos necesarios
+ */
 let inputText  = mainNode.querySelector("#inputNode-text")
 let outPutNode  = mainNode.querySelector("#outputNode-text")
 let inputButton  = mainNode.querySelector("#input-button")
@@ -21,6 +29,10 @@ console.log({
     inputButton
 })
 
+
+/**
+ * Funcion principal
+ */
 let eventFunction = async () => {
     let inputText  = mainNode.querySelector("#inputNode-text")
     let outPutNode  = mainNode.querySelector("#json-display")
@@ -40,18 +52,17 @@ let eventFunction = async () => {
     }finally{
              inputText.value =""
     }
-    
-   
-
-   
-  
-
-
 }
+
+/**
+ * Evento para detectar el boton principal
+ */
 
 inputButton.addEventListener("click", eventFunction)
 
-
+/**
+ * Evento para detectar el boton de Enter
+ */
 document.addEventListener("keydown", function(event) {
     if (event.key === "Enter") {
         eventFunction()
