@@ -21,7 +21,7 @@ main{
 
 .main-container{
     width: 90%;
-    height: 90vh;
+    height: 95vh;
     border: 1px solid blue;
     background-color: #03124E;
 }
@@ -30,6 +30,7 @@ main{
     width: 95%;
     border-radius: 1rem;
     padding: 1rem;
+    font-size: 1.5rem;
 }
 
 #outputNode-text{
