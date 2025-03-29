@@ -9,11 +9,14 @@ let checkText = async (text="") => {
     let tokensList = dictionary.tokenize(text)
     const parser = new Parser(tokensList);
     const result = parser.parseExpression();
+    const binaryResult = result.toString(2)
+
 
     return {
         inputText,
         parser,
-        result
+        result,
+        binaryResult
     }
     
 }
