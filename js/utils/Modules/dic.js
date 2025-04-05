@@ -109,10 +109,12 @@ class Token {
   const dictionary = new Dictionary();
   
   // 🔽 Registro de tokens
+  dictionary.addToken('variable', /\$[a-zA-Z0-9_-]+/)
   dictionary.addToken('BinaryNumber', /^[01]+$/);
   dictionary.addToken('Plus', /^\+$/);
   dictionary.addToken('Minus', /^\-$/);
   dictionary.addToken('Multiply', /^\*$/);
+  dictionary.addToken('Assign', /^=$/);
 
   
   // 🔁 Exportar para usar en otro módulo

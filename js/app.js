@@ -22,6 +22,10 @@ mainNode.innerHTML = await mainView()
 let inputText  = mainNode.querySelector("#inputNode-text")
 let outPutNode  = mainNode.querySelector("#outputNode-text")
 let inputButton  = mainNode.querySelector("#input-button")
+let inputTestButton  = mainNode.querySelector("#input-test-text")
+
+
+
 
 console.log({
     inputText,
@@ -33,6 +37,20 @@ console.log({
 /**
  * Funcion principal
  */
+
+inputTestButton.addEventListener("click", (eventNode)=>{
+
+    let inputText  = mainNode.querySelector("#inputNode-text")
+    console.log("Node", eventNode)
+
+    let textTest =`$a = 1010 + 1 $b = $a + 10`
+    inputText.textContent = ""
+    inputText.value = textTest
+
+})
+
+
+
 let eventFunction = async () => {
     let inputText  = mainNode.querySelector("#inputNode-text")
     let outPutNode  = mainNode.querySelector("#json-display")
